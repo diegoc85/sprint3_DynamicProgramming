@@ -66,12 +66,24 @@ No protótipo, essas duas etapas foram unificadas na opção 1 do menu:
 
 ---
 
-## Complexidade Resumida
+## Complexidade
 - Inserção e remoção na fila: **O(1)**  
+    Fila de Exames(FilaExamesDiarios)
+    Tempo constante independente de quantos exames existam 
+
 - Operações de pilha (empilhar, desempilhar, topo): **O(1)**  
+    Pilha de consultas e desfazer (PilhaConsultasRecentes, PilhaDesfazerProcessamento)
+
 - Busca sequencial: **O(n)**  
+    Serve bem em listas pequenas, mas pode ficar lento com muitos laudos.
+    (localizar_laudo_por_id_sequencial)
 - Busca binária: **O(log n)**  
+    localizar_laudo_por_id_binaria
+    Mais eficiente que a busca sequencial, mas exige que a lista esteja ordenada.
+
 - Ordenação (Merge Sort): **O(n log n)**  
+    (organizar_laudos_por_id, via Merge Sort)
+    Mesmo que a lista cresça, o algoritmo tem desempenho estável.
 
 ---
 ## Função de desfazer (UNDO)
