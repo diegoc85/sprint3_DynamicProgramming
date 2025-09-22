@@ -1,4 +1,4 @@
-# Sistema de Dimensionamento Automático de Lesões (Protótipo do CHALLENGE DASA)
+# Sistema de Dimensionamento Automático de Tecidos (CHALLENGE DASA)
 
 ## Grupo
 - Diego Cabral - RM 557817
@@ -52,7 +52,7 @@ No protótipo, essas duas etapas foram unificadas na opção 1 do menu:
 ### 4) Busca Binária
 - Divide a lista de laudos ao meio a cada passo.  
 - Complexidade **O(log n)**.  
-- Muito rápida, mas exige que a lista esteja **ordenada**.  
+- Rápida, mas exige que a lista esteja **ordenada**.  
 - Para isso, antes de usar a busca binária, o sistema verifica e ordena os laudos.  
 
 ### 5) Ordenação com Merge Sort
